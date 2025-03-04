@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Panther Tribute</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo" role="banner">Black Panther</div>
+        <ul>
+            <li><a href="index.html" aria-label="Home">Home</a></li>
+            <li><a href="about.html" aria-label="About">About</a></li>
+        </ul>
+    </nav>
+    
+    <header class="hero">
+        <div class="overlay"></div>
+        <h1>Wakanda Forever</h1>
+    </header>
+    
+    <main>
+        <section class="card-container">
+            <div class="card" onclick="toggleInfo('legacy-info')">
+                <img src="https://th.bing.com/th/id/OIP.r2vgxyeYO-xeDT6kwZNrhgHaEK?rs=1&pid=ImgDetMain" alt="Legacy" class="card-img">
+                <h2>Legacy</h2>
+                <p id="legacy-info" class="card-info hidden">Black Panther has left an indelible mark on cinema and culture, showcasing African heritage in a powerful and positive light.</p>
+            </div>
+            <div class="card" onclick="toggleInfo('cast-info')">
+                <img src="https://wallpaperaccess.com/full/8908782.jpg" alt="Cast" class="card-img">
+                <h2>Cast</h2>
+                <p id="cast-info" class="card-info hidden">Featuring a stellar cast led by Chadwick Boseman, the film's actors brought depth and authenticity to their roles.</p>
+            </div>
+            <div class="card" onclick="toggleInfo('wakanda-info')">
+                <img src="https://wallpaperaccess.com/full/5550753.jpg" alt="Wakanda" class="card-img">
+                <h2>Wakanda</h2>
+                <p id="wakanda-info" class="card-info hidden">Wakanda, a fictional African nation, represents a vision of Afrofuturism and technological prowess.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
